@@ -1,0 +1,4 @@
+Error (parsed JSON):
+{
+  "error": "Bedrock error: An error occurred (ValidationException) when calling the InvokeModel operation: Content in the all of the generated image(s) has been blocked and has been filtered from the response. Our system automatically blocked because the generated image(s) may conflict our AUP or AWS Responsible AI Policy."
+}

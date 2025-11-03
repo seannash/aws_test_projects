@@ -1,0 +1,28 @@
+{
+  "name": "bedrock0",
+  "version": "0.1.0",
+  "bin": {
+    "bedrock0": "bin/bedrock0.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "export-alb": "./export-alb-env.sh",
+    "get-alb": "aws cloudformation describe-stacks --stack-name Bedrock0Stack --query 'Stacks[0].Outputs[?OutputKey==`ALBDnsName`].OutputValue' --output text"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "22.7.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "aws-cdk": "2.1031.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.215.0",
+    "constructs": "^10.0.0"
+  }
+}
